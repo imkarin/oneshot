@@ -1,0 +1,255 @@
+/* Homepage hero character animation */
+.character {
+    overflow: visible;
+}
+
+.brush {
+    transform-origin: 45%;
+    animation: brush-wiggle
+    4s
+    ease
+    infinite;
+}
+
+.brush_tip {
+    transform-origin: top;
+    animation: brushtip-wiggle
+    4s
+    ease
+    infinite;
+}
+
+.brush_paint {
+    transform-origin: top;
+    animation: brushpaint-wiggle
+    4s
+    ease
+    infinite;
+}
+
+.hand1 {
+    transform-origin: 45%;
+    animation: hand-wiggle
+    4s
+    ease
+    infinite;
+}
+
+.upperarm1, .sleeve1 {
+    transform-origin: center;
+    animation: arm1-stretch
+    4s
+    ease
+    infinite;
+}
+
+.arm2, .bottle_arm {
+    transform-origin: 190%;
+    animation: move-arm2
+    4s
+    ease
+    infinite;
+}
+
+.upperarm2 {
+    transform-origin: top;
+    animation: stretch-upperarm2
+    4s
+    ease
+    infinite;
+}
+
+.body, .neck {
+    transform-origin: top;
+    animation: turn-body
+    4s
+    ease
+    infinite;
+}
+
+.leg1, .leg2, .foot1, .foot2 {
+    transform-origin: top;
+    animation: turn-legs
+    4s
+    ease
+    infinite;
+}
+
+.head {
+    transform-origin: top;
+    animation: turn-head
+    4s
+    ease
+    infinite;
+}
+
+.pupil1, .pupil2{
+    animation: remove-pupils
+    4s
+    ease
+    infinite,
+    turn-head
+    4s
+    ease
+    infinite;
+}
+
+.eyelid1, .eyelid2{
+    animation: down-eyelids
+    4s
+    ease
+    infinite,
+    turn-head
+    4s
+    ease
+    infinite;
+}
+
+.bottle_left {
+    animation: move-up-extra
+    6s
+    alternate
+    infinite;
+}
+
+.bottle_right {
+    animation: move-up
+    3s
+    ease
+    alternate
+    infinite;
+}
+
+@keyframes brush-wiggle {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(-3deg) translate(-10px, -10px);
+    } 60% {
+        transform: rotate(-6deg) translate(-10px, -10px);
+    } 80% {
+        transform: rotate(-9deg) translate(-10px, 0px)
+    }
+}
+
+@keyframes brushtip-wiggle {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(0deg) translate(-20px, 0px);
+    } 60% {
+        transform: rotate(14deg) translate(-12px, 50px);
+    } 80% {
+        transform: rotate(10deg) translate(-25px, 56px);
+    }
+}
+
+@keyframes brushpaint-wiggle {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(0deg) translate(-20px, 0px);
+    } 60% {
+        transform: rotate(20deg) translate(-2.5px, 68px);
+    } 80% {
+        transform: rotate(22deg) translate(-3px, 92.5px);
+    }
+}
+
+@keyframes hand-wiggle {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(-5deg) translate(-20px, -15px);
+    } 60% {
+        transform: rotate(-8deg) translate(-20px, -5px);
+    } 80% {
+        transform: rotate(-11deg) translate(-33px, 5px);
+    }
+}
+
+@keyframes arm1-stretch {
+    0%, 35%, 100% {
+        transform: scale(1) translate(0);
+    } 50%, 70%, 90% {
+        transform: scale(1.2, 1) translate(0);
+    } 60% {
+        transform: scale(1.3, 1) translate(0, 5px);
+    } 80% {
+        transform: scale(1.7, 1) translate(0, 10px);
+    }
+}
+
+@keyframes stretch-upperarm2 {
+    0%, 35%, 100% {
+        transform: translate(0, 0);
+    } 50%, 70%, 90% {
+        transform: translate(4px, -4px);
+    }
+}
+
+@keyframes move-arm2 {
+    0%, 35%, 100% {
+        transform: translate(0);
+    } 50%, 70%, 90% {
+        transform: translate(1.5px, -3px);
+    }
+}
+
+@keyframes turn-body {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(-4deg) translate(-20px, -5px);
+    }
+}
+
+@keyframes turn-legs {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(2deg) translate(18px, -10px);
+    }
+}
+
+@keyframes turn-head {
+    0%, 35%, 100% {
+        transform: rotate(0) translate(0);
+    } 50%, 70%, 90% {
+        transform: rotate(-5deg) translate(-25px, -3px);
+    }
+}
+
+@keyframes remove-pupils {
+    0%, 12% {
+        opacity: 1;
+    } 2%, 10% {
+        opacity: 0;
+    }
+}
+
+@keyframes down-eyelids {
+    0%, 48%, 65% {
+        transform: scale(0);
+    } 50%, 63% {
+        transform: scale(0, 1.3);
+    }
+}
+
+@keyframes move-up {
+    0% {
+        transform: translate(0, 0);
+    } 100% {
+        transform: translate(0, -20px);
+    }
+}
+
+@keyframes move-up-extra {
+    0% {
+        transform: translate(0, 0);
+    } 50% {
+        transform: translate(3px, -20px);
+    } 100% {
+        transform: translate(0, 10px)
+    }
+}

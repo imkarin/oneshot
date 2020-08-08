@@ -1,0 +1,77 @@
+@import './variables';
+
+body {
+    font-family: $base-font;
+    letter-spacing: -.02em;
+}
+
+a, a:visited, a:hover, a:active {
+    color: $black;
+    text-decoration: none;
+
+    @media screen and (max-width: $bp-tablet) {
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+    }
+}
+
+h1 {
+    //mobile + tablet
+    font-size: 48px;
+    line-height: 64px;
+
+    // desktop small
+    @media screen and (min-width: $bp-desktop-sm) {
+    }
+}
+
+h2 {
+    //mobile + tablet
+    font-size: 36px;
+    line-height: 50px;
+
+    // desktop small
+    @media screen and (min-width: $bp-desktop-sm) {
+    }
+}
+
+h3 {
+    //mobile + tablet
+    font-size: 24px;
+    line-height: 34px;
+
+    // desktop small
+    @media screen and (min-width: $bp-desktop-sm) {
+    }
+}
+
+h4 {
+    //mobile + tablet
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    // desktop small
+    @media screen and (min-width: $bp-desktop-sm) {
+    }
+}
+
+p {
+    //mobile + tablet
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: $color-trout;
+
+    // desktop small
+    @media screen and (min-width: $bp-desktop-sm) {
+        font-size: 18px;
+        line-height: 34px;;
+    }
+}
+
+strong {
+    font-weight: 500;
+}

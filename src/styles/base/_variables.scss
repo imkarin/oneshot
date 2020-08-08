@@ -1,0 +1,46 @@
+// Base fonts
+$base-font: 'Work Sans', sans-serif;
+
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$bg-color: #FDFDFD;
+
+// Pallette
+$color-riverbed: #414756;
+$color-trout: #4C5261;
+$color-downriver: #0B3254;
+$color-royalblue: #4D67E3;
+$color-pictonblue: #42B4E3;
+$color-turquoise: #36E3B9;
+$color-lightblue: #E5F4FA;
+
+// Breakpoints for for min-width
+$bp-mobile: 320px;
+$bp-tablet: 480px;
+$bp-desktop-sm: 1120px;
+$bp-desktop-md: 1280px;
+
+// Margins
+$max-width-content: 1340px;
+
+$margin-sections-mobile: 80px;
+$margin-sections-tablet: 112px;
+$margin-sections-desktop: 140px;
+
+$margin-rows: 48px;
+
+$margin-two-col-cards: 60px;
+$margin-two-col: 60px;
+$margin-three-col: 60px;
+$margin-four-col: 60px;
+
+$side-padding-mobile: 16px;
+$side-padding-tablet: 40px;
+$side-padding-desktop: 80px;
+
+// Transitions
+$transition-200: all .2s ease;
+$transition-300: all .3s ease;
+$transition-400: all .4s ease;
+$transition-500: all .5s ease;

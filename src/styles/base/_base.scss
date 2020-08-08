@@ -1,0 +1,86 @@
+body {
+    background: $bg-color;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+// side padding responsive
+.side-padding {
+    padding: $margin-sections-mobile $side-padding-mobile;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: $margin-sections-tablet $side-padding-tablet;
+    }
+
+    @media screen and (min-width: $bp-desktop-sm) {
+        padding: $margin-sections-desktop $side-padding-desktop;
+    }
+}
+
+.Layout {
+    background-color: $bg-color;
+
+    // general styling sections
+        section {
+            @extend .side-padding;
+            margin: 0 auto;
+            max-width: $max-width-content;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            @media screen and (min-width: $bp-tablet) {
+                flex-direction: row;
+            }
+     
+            // "special" style classes
+            &.centered {
+                text-align: center;
+            }
+        }
+
+        // columns    
+        .col {
+            flex-direction: column;
+            margin-bottom: $margin-rows;
+
+            > * {
+                max-width: 100%;
+            }
+        }
+        
+        .one-of-two {
+            max-width: 100%;
+
+            @media screen and (min-width: $bp-tablet) {
+                max-width: calc((#{$max-width-content} - #{$margin-two-col}) / 3);
+            }
+        }
+
+        .one-of-three {
+            max-width: 100%;
+
+            @media screen and (min-width: $bp-tablet) {
+                max-width: calc((#{$max-width-content} - 2 * #{$margin-three-col}) / 3);
+            }
+        }
+
+        .one-of-four {
+            max-width: 100%;
+
+            @media screen and (min-width: $bp-tablet) {
+                max-width: calc((#{$max-width-content} - 3 * #{$margin-four-col}) / 4);
+            }
+        }
+}
+
+
+// @media screen and (min-width: $bp-tablet) {
+// }
+
+// @media screen and (min-width: $bp-desktop-sm) {
+// }    
+
+// @media screen and (min-width: $bp-desktop-md) {
+// }  
