@@ -1,0 +1,29 @@
+@import '../../../styles/base/variables';
+
+.Nav {
+    position: relative;
+    width: 100%;
+    margin: 40px auto 0;
+    max-width: $max-width-content;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-bottom: $padding-sections-desktop;
+    
+    > *:not(:last-child) {
+        font-size: 16px;
+        margin-right: 76px;
+    }
+
+    .OneshotLogo {
+        position: absolute;
+        left: 0;
+    }
+
+    .Icon {
+        max-width: 24px;
+        margin: 0;
+    }
+}

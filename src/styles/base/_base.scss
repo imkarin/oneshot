@@ -4,31 +4,19 @@ body {
     scroll-behavior: smooth;
 }
 
-// side padding responsive
-.side-padding {
-    padding: $margin-sections-mobile $side-padding-mobile;
-
-    @media screen and (min-width: $bp-tablet) {
-        padding: $margin-sections-tablet $side-padding-tablet;
-    }
-
-    @media screen and (min-width: $bp-desktop-sm) {
-        padding: $margin-sections-desktop $side-padding-desktop;
-    }
-}
-
 .Layout {
     background-color: $bg-color;
 
     // general styling sections
         section {
-            @extend .side-padding;
+            @extend .top-bottom-padding;
             margin: 0 auto;
             max-width: $max-width-content;
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
             flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
 
             @media screen and (min-width: $bp-tablet) {
                 flex-direction: row;
@@ -37,13 +25,28 @@ body {
             // "special" style classes
             &.centered {
                 text-align: center;
+                justify-content: center;
+            }
+
+            // children of sections need to take up their max widths
+            > * {
+                width: 100%;
             }
         }
 
         // columns    
         .col {
+            width: 100%;
+            display: flex;
             flex-direction: column;
-            margin-bottom: $margin-rows;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (min-width: $bp-tablet) {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
 
             > * {
                 max-width: 100%;
@@ -51,36 +54,14 @@ body {
         }
         
         .one-of-two {
-            max-width: 100%;
-
-            @media screen and (min-width: $bp-tablet) {
-                max-width: calc((#{$max-width-content} - #{$margin-two-col}) / 3);
-            }
+            @include colwidth(2);
         }
 
         .one-of-three {
-            max-width: 100%;
-
-            @media screen and (min-width: $bp-tablet) {
-                max-width: calc((#{$max-width-content} - 2 * #{$margin-three-col}) / 3);
-            }
+            @include colwidth(3);
         }
 
         .one-of-four {
-            max-width: 100%;
-
-            @media screen and (min-width: $bp-tablet) {
-                max-width: calc((#{$max-width-content} - 3 * #{$margin-four-col}) / 4);
-            }
+            @include colwidth(4);
         }
 }
-
-
-// @media screen and (min-width: $bp-tablet) {
-// }
-
-// @media screen and (min-width: $bp-desktop-sm) {
-// }    
-
-// @media screen and (min-width: $bp-desktop-md) {
-// }  

@@ -2,18 +2,19 @@
 $base-font: 'Work Sans', sans-serif;
 
 // Colors
-$black: #000000;
+$black: #100F10;
 $white: #FFFFFF;
-$bg-color: #FDFDFD;
+$bg-color: #f5f5f5;
 
 // Pallette
-$color-riverbed: #414756;
-$color-trout: #4C5261;
-$color-downriver: #0B3254;
-$color-royalblue: #4D67E3;
-$color-pictonblue: #42B4E3;
-$color-turquoise: #36E3B9;
-$color-lightblue: #E5F4FA;
+$color-yellow: #FFDA3E;
+$color-orange: #F29079;
+$color-pink: #E295EF;
+$color-purple: #AA65E0;
+$color-blue: #3DD2E2;
+
+// Styling attributes
+$box-shadow-standard: 0 4px 44px 44px #F9F9F9;
 
 // Breakpoints for for min-width
 $bp-mobile: 320px;
@@ -21,19 +22,15 @@ $bp-tablet: 480px;
 $bp-desktop-sm: 1120px;
 $bp-desktop-md: 1280px;
 
-// Margins
+// Margins and padding
 $max-width-content: 1340px;
 
-$margin-sections-mobile: 80px;
-$margin-sections-tablet: 112px;
-$margin-sections-desktop: 140px;
+$padding-sections-mobile: 80px;
+$padding-sections-tablet: 112px;
+$padding-sections-desktop: 140px;
 
-$margin-rows: 48px;
-
-$margin-two-col-cards: 60px;
-$margin-two-col: 60px;
-$margin-three-col: 60px;
-$margin-four-col: 60px;
+$padding-rows: 48px;
+$padding-side-cols: 60px;
 
 $side-padding-mobile: 16px;
 $side-padding-tablet: 40px;
@@ -44,3 +41,42 @@ $transition-200: all .2s ease;
 $transition-300: all .3s ease;
 $transition-400: all .4s ease;
 $transition-500: all .5s ease;
+
+
+// Padding between sections
+.top-bottom-padding {
+    padding: $padding-sections-mobile 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: $padding-sections-tablet 0;
+    }
+
+    @media screen and (min-width: $bp-desktop-sm) {
+        padding: $padding-sections-desktop 0;
+    }
+}
+
+// Max widths for columns
+@mixin colwidth($col-amount) {
+    max-width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+        @if $col-amount == 2 {
+            max-width: calc((100vw - #{$padding-side-cols}) / 2);
+        } @else if $col-amount == 3 {
+            max-width: calc((100vw - 2 * #{$padding-side-cols}) / 3);
+        } @else if $col-amount == 4 {
+            max-width: calc((100vw - 3 * #{$padding-side-cols}) / 4);
+        }
+    }
+
+    @media screen and (min-width: $bp-desktop-sm) {
+        @if $col-amount == 2 {
+            max-width: calc((#{$max-width-content} - #{$padding-side-cols}) / 2);
+        } @else if $col-amount == 3 {
+            max-width: calc((#{$max-width-content} - 2 * #{$padding-side-cols}) / 3);
+        } @else if $col-amount == 4 {
+            max-width: calc((#{$max-width-content} - 3 * #{$padding-side-cols}) / 4);
+        }
+    }
+}

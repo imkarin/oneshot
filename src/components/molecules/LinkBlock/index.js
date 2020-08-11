@@ -7,7 +7,7 @@ const LinkBlock = props => {
     return (
         <div className="LinkBlock">
             <Text type="h4">{props.h4Text}</Text>
-            <Anchor href={props.href}>{props.anchorText}</Anchor>
+            <Anchor href={props.href}>{props.linkText}</Anchor>
         </div>
     )
 }

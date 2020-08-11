@@ -5,8 +5,13 @@ const TextPP = props => {
 
     return (
         <div className="TextPP">
-            <Text type="strong">{props.strongText}</Text>
-            <Text type="p">{props.pText}</Text>
+            { props.strongText
+            ? <Text type="strong">{props.strongText}</Text>
+            : (null) }
+            
+            { props.pText
+            ? <Text type="p">{props.pText}</Text>
+            : (null) }
         </div>
     )
 } 

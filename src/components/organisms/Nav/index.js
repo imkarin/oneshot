@@ -6,14 +6,14 @@ import Icon from '../../atoms/Icon'
 const Nav = props => {
 
     return (
-        <nav className="nav">
+        <nav className="Nav">
             <OneshotLogo />
             <Anchor href="/werk">Werk</Anchor>
             <Anchor href="/diensten">Diensten</Anchor>
             <Anchor href="/aanpak">Aanpak</Anchor>
-            <Anchor href="/contact">Contact</Anchor>
+            <Anchor href="/contact">Contact</Anchor> 
             <Anchor href="#">
-                <Icon src="" alt="Darkmode eye icon" />
+                <Icon src="/images/icon-eye.png" alt="Darkmode eye icon" />
             </Anchor>
         </nav>
     )

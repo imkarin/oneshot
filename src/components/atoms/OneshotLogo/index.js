@@ -4,7 +4,7 @@ const OneshotLogo = props => {
     return (
         <img
             className="OneshotLogo"
-            src="/images/logo-dark.png" 
+            src="/images/logo/logo-dark.png" 
             alt="Oneshot Design en Development logo"
         />
     )

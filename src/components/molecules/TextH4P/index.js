@@ -5,8 +5,13 @@ const TextH4P = props => {
 
     return (
         <div className="TextH4P">
-            <Text type="h4">{props.h4Text}</Text>
-            <Text type="p">{props.pText}</Text>
+            { props.h4Text
+            ? <Text type="h4">{props.h4Text}</Text>
+            : (null) }
+
+            { props.pText
+            ? <Text type="p">{props.pText}</Text>
+            : (null) }
         </div>
     )
 } 

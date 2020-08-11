@@ -1,6 +1,8 @@
+import Nav from '../components/organisms/Nav'
+
 const Layout = props => (
     <div className="Layout">
-        {/* <div>Nav</div> */}
+        <Nav />
         {/* <div>Header</div> */}
 
         <main>

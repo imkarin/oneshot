@@ -5,10 +5,10 @@ import LogoRow from '../../molecules/LogoRow'
 const LogoShowcase = props => {
 
     return (
-        <LogoShowcase className="LogoShowcase">
-            <Image type="decoration" src="#" alt="Sparkles" />
+        <div className="LogoShowcase">
+            <Image type="decoration" src="/images/sparkles.png" alt="Sparkles" />
             <LogoRow logos={props.logos} />
-        </LogoShowcase>
+        </div>
     )
 }
 

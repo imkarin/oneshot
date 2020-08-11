@@ -1,0 +1,23 @@
+@import '../../../styles/base/variables.scss';
+
+.LogoRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+    }
+
+    > .col {
+        padding-bottom: $padding-rows;
+        
+        @media screen and (min-width: $bp-desktop-sm) {
+            width: 25%;
+            padding-bottom: 0;
+        }
+    }
+}

@@ -6,7 +6,7 @@ const Figure = props => {
 
     return (
         <div className="Figure">
-            <Image src={props.imgSrc} alt={props.imgAlt} />
+            <Image type="figure" src={props.imgSrc} alt={props.imgAlt} />
             <TextPP strongText={props.strongText} pText={props.pText} />
         </div>
     )

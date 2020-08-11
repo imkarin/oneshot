@@ -1,0 +1,27 @@
+@import '../../../styles/index.scss';
+
+.Button {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 1px solid $black;
+    border-radius: 80px;
+
+    > .button_background {
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        background: #ffaded;
+        border-radius: 50%;
+        transition: width .3s, height .3s, transform .3s;
+        
+        &.bigger {
+            width: 210%;
+            height: 210%;
+            transform: translate(-50%, -50%);
+            transition: .5s;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.Image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    align-self: center;
+
+    &.decoration {
+        max-width: 40px;
+    }
+
+    &.smallIllustration, &.logo {
+        max-width: 176px;
+    }
+
+    &.cardPreview {
+        max-width: 256px;
+        padding-bottom: 96px;
+        align-self: center;
+    }
+
+    &.figure {
+        max-width: 200px;
+        padding-bottom: 24px;
+    }
+}
