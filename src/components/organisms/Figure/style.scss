@@ -1,0 +1,13 @@
+@import '../../../styles/base/variables';
+
+.Figure {
+    padding-top: $padding-sections-mobile / 2;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: $bp-desktop-sm) {
+        padding-top: 0;
+    }
+}

@@ -9,12 +9,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    padding-bottom: $padding-sections-desktop;
     
     > *:not(:last-child) {
         font-size: 16px;
-        margin-right: 76px;
+        margin-right: 88px;
     }
 
     .OneshotLogo {

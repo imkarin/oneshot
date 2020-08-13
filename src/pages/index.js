@@ -4,6 +4,7 @@ import TextPrimary from '../components/organisms/TextPrimary'
 import Figure from '../components/organisms/Figure'
 import LogoShowcase from '../components/organisms/LogoShowcase'
 import TextSecondary from '../components/organisms/TextSecondary'
+import Header from '../components/organisms/Header'
 
 const Home = () => {
     const logos = [
@@ -24,7 +25,14 @@ const Home = () => {
             </Head>
 
             <Layout>
-                <section>
+                <Header 
+                h1Text="We combine strategy, creativity &amp; technology into digital experiences." 
+                pText="Oneshot vertaalt uw ideeën in digitale oplossingen." 
+                linkText="Bekijk onze diensten" 
+                linkSrc="#"
+                imgSrc="/images/home-hero.svg" imgAlt="Creative digital webagency header" />
+
+                <section className="aligned-center">
                     <div className="col one-of-four">
                         <TextPrimary 
                         buttonHref="#"

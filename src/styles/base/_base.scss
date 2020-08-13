@@ -28,6 +28,10 @@ body {
                 justify-content: center;
             }
 
+            &.aligned-center {
+                align-items: center;
+            }
+
             // children of sections need to take up their max widths
             > * {
                 width: 100%;

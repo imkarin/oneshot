@@ -1,3 +1,5 @@
+@import '../../../styles/base/variables';
+
 .Image {
     width: 100%;
     height: auto;
@@ -21,5 +23,29 @@
     &.figure {
         max-width: 200px;
         padding-bottom: 24px;
+    }
+
+    &.projectHeader {
+        margin-top: -214px;
+        z-index: -999;
+        max-height: 100vh;
+        object-fit: cover;
+    }
+
+    &.headerIllustration {
+        padding-top: $padding-sections-mobile / 2;
+        max-width: 64%;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding-top: 0;
+            max-width: 84%;
+        }
+
+        @media screen and (min-width: $bp-desktop-sm) {
+            padding-top: 24px;
+            max-width: 96%;
+            align-self: flex-end;
+            justify-self: flex-end;
+        }
     }
 }

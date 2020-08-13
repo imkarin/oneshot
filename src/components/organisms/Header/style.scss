@@ -1,0 +1,33 @@
+@import '../../../styles/base/variables.scss';
+
+.Header {
+    margin: 0 auto;
+    width: 100%;
+    
+    @media screen and (min-width: $bp-tablet) {
+        min-height: 880px;
+        height: 94vh;
+        max-width: $max-width-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    > * {
+        width: 100%;
+
+        &:first-child {
+            @media screen and (min-width: $bp-desktop-sm) {
+                max-width: 66%;
+            }
+        }
+
+        &:last-child {
+            @media screen and (min-width: $bp-desktop-sm) {
+                max-width: 33%;
+            }
+        }
+    }
+}

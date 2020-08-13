@@ -7,7 +7,11 @@ const Header = props => {
     return (
         <header className="Header">
             <div className="col one-of-two">
-                <IntroText h1Text={props.h1Text} pText={props.pText} strongText={props.strongText} />
+                <IntroText 
+                h1Text={props.h1Text} 
+                pText={props.pText} 
+                linkText={props.linkText} 
+                linkSrc={props.linkSrc}/>
             </div>
 
             <div className="col one-of-two">
