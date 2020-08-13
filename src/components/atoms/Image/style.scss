@@ -21,8 +21,16 @@
     }
 
     &.figure {
-        max-width: 200px;
-        padding-bottom: 24px;
+        width: 40%;
+        object-fit: contain;
+        order: 2;
+
+        @media screen and (min-width: $bp-tablet) {
+            order: 0;
+            height: 184px;
+            width: auto;
+            padding-bottom: 24px;
+        }
     }
 
     &.projectHeader {
@@ -34,7 +42,6 @@
 
     &.headerIllustration {
         padding-top: $padding-sections-mobile / 2;
-        max-width: 64%;
 
         @media screen and (min-width: $bp-tablet) {
             padding-top: 0;
@@ -44,7 +51,7 @@
         @media screen and (min-width: $bp-desktop-sm) {
             padding-top: 24px;
             max-width: 96%;
-            align-self: flex-end;
+            align-self: center;
             justify-self: flex-end;
         }
     }

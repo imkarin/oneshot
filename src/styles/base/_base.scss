@@ -1,40 +1,50 @@
 body {
-    background: $bg-color;
+    background: $white;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 .Layout {
-    background-color: $bg-color;
+    background-color: $white;
+    overflow-x: hidden;
+
+    nav, header {
+        @extend %side-padding;
+    }
 
     // general styling sections
         section {
-            @extend .top-bottom-padding;
+            @extend %top-bottom-padding;
+            @extend %side-padding;
+
             margin: 0 auto;
             max-width: $max-width-content;
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            
+        }
+        
+        //rows
+        .row {
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-
+            flex-wrap: wrap;
+            
             @media screen and (min-width: $bp-tablet) {
                 flex-direction: row;
             }
-     
+            
             // "special" style classes
             &.centered {
                 text-align: center;
                 justify-content: center;
-            }
-
-            &.aligned-center {
                 align-items: center;
             }
-
-            // children of sections need to take up their max widths
-            > * {
-                width: 100%;
+    
+            &.aligned-center {
+                align-items: center;
             }
         }
 
@@ -44,16 +54,14 @@ body {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-bottom: $side-padding-mobile;
 
             @media screen and (min-width: $bp-tablet) {
                 justify-content: flex-start;
                 align-items: flex-start;
-            }
-
-            > * {
-                max-width: 100%;
+                padding-bottom: 0;
             }
         }
         

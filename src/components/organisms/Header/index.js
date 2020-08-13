@@ -1,22 +1,21 @@
 import './style.scss'
 import IntroText from '../../molecules/IntroText'
+import SVG from '../../atoms/SVG'
 import Image from '../../atoms/Image'
 
 const Header = props => {
-
     return (
         <header className="Header">
-            <div className="col one-of-two">
-                <IntroText 
-                h1Text={props.h1Text} 
-                pText={props.pText} 
-                linkText={props.linkText} 
-                linkSrc={props.linkSrc}/>
-            </div>
+            <IntroText 
+            h1Text={props.h1Text} 
+            pText={props.pText} 
+            linkText={props.linkText} 
+            linkSrc={props.linkSrc}/>
 
-            <div className="col one-of-two">
-                <Image type="headerIllustration" src={props.imgSrc} alt={props.imgAlt} />
-            </div>
+            {props.homePage
+            ? <SVG />
+             : <Image type="headerIllustration" src={props.imgSrc} alt={props.imgAlt} />
+            }
         </header>
     )
 }

@@ -2,18 +2,11 @@
 
 .LogoRow {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
-
-    @media screen and (min-width: $bp-tablet) {
-        flex-direction: row;
-    }
 
     > .col {
         padding-bottom: $padding-rows;
+        width: 48%;
         
         @media screen and (min-width: $bp-desktop-sm) {
             width: 25%;

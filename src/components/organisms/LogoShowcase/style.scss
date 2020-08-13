@@ -1,6 +1,16 @@
+@import '../../../styles/base/variables';
+
 .LogoShowcase {
     > .Image {
         margin-bottom: -8px;
-        margin-left: 0;
+        margin-left: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-left: 4%;
+        }
+        
+        @media screen and (min-width: $bp-desktop-sm) {
+            margin-left: 0;
+        }
     }
 }

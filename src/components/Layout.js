@@ -1,4 +1,5 @@
 import Nav from '../components/organisms/Nav'
+import Footer from '../components/organisms/Footer'
 
 const Layout = props => (
     <div className="Layout">
@@ -9,7 +10,7 @@ const Layout = props => (
             {props.children}
         </main>
 
-        {/* <div>Footer</div> */}
+        <Footer />
     </div>
   )
 

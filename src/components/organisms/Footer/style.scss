@@ -1,0 +1,49 @@
+@import '../../../styles/base/variables';
+
+.Footer {
+    box-sizing: content-box;
+    width: 100%;
+    max-width: $max-width-content;
+    margin: 0 auto;
+    background-color: $color-light-pink;
+    display: flex;
+    flex-direction: column;
+    padding: $padding-sections-mobile $side-padding-mobile;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: $padding-sections-tablet $side-padding-tablet;
+    }
+
+    @media screen and (min-width: $bp-desktop-sm) {
+        margin-top: $padding-sections-desktop;
+        padding-left: $side-padding-desktop;
+        padding-right: $side-padding-desktop;        
+    }
+
+    @media screen and (min-width: $bp-desktop-md + $side-padding-desktop * 2) {
+        padding: $padding-sections-desktop calc((100vw - #{$max-width-content}) / 2);
+    }
+    
+    .col {
+        align-self: flex-end;
+
+        > .OneshotLogo {
+            padding-bottom: 24px;
+        }
+
+        > * {
+            padding: 12px 0;
+
+            @media screen and (min-width: $bp-desktop-sm) {
+                padding: 24px 0;
+            }
+        }
+
+        .LinkBlock {
+            a {
+                border-bottom: 1px solid $black;
+                padding-bottom: 4px;
+            }
+        }
+    }
+}

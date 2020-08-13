@@ -5,7 +5,7 @@ const LogoRow = props => {
     const logos = props.logos
 
     return (
-        <div className="LogoRow">
+        <div className="LogoRow row centered">
             {
                 logos.map(logo => (
                     <div key={"colFor " + logo.alt} className="col one-of-two">

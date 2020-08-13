@@ -4,7 +4,6 @@ $base-font: 'Work Sans', sans-serif;
 // Colors
 $black: #100F10;
 $white: #FFFFFF;
-$bg-color: #f5f5f5;
 
 // Pallette
 $color-yellow: #FFDA3E;
@@ -12,8 +11,11 @@ $color-orange: #F29079;
 $color-pink: #E295EF;
 $color-purple: #AA65E0;
 $color-blue: #3DD2E2;
+$color-light-pink: #FDFAFF;
 
 // Styling attributes
+$box-shadow-mobile: 0 4px 12px 12px #F9F9F9;
+$box-shadow-tablet: 0 4px 24px 24px #F9F9F9;
 $box-shadow-standard: 0 4px 44px 44px #F9F9F9;
 
 // Breakpoints for for min-width
@@ -32,7 +34,7 @@ $padding-sections-desktop: 140px;
 $padding-rows: 48px;
 $padding-side-cols: 60px;
 
-$side-padding-mobile: 16px;
+$side-padding-mobile: 24px;
 $side-padding-tablet: 40px;
 $side-padding-desktop: 80px;
 
@@ -44,7 +46,7 @@ $transition-500: all .5s ease;
 
 
 // Padding between sections
-.top-bottom-padding {
+%top-bottom-padding {
     padding: $padding-sections-mobile 0;
 
     @media screen and (min-width: $bp-tablet) {
@@ -56,6 +58,27 @@ $transition-500: all .5s ease;
     }
 }
 
+// Side padding
+%side-padding {
+    padding-left: $side-padding-mobile;
+    padding-right: $side-padding-mobile;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-left: $side-padding-tablet;
+        padding-right: $side-padding-tablet;        
+    }
+    
+    @media screen and (min-width: $bp-desktop-sm) {
+        padding-left: $side-padding-desktop;
+        padding-right: $side-padding-desktop;        
+    }
+
+    @media screen and (min-width: $bp-desktop-md + $side-padding-desktop * 2) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 // Max widths for columns
 @mixin colwidth($col-amount) {
     max-width: 100%;
@@ -64,9 +87,9 @@ $transition-500: all .5s ease;
         @if $col-amount == 2 {
             max-width: calc((100vw - #{$padding-side-cols}) / 2);
         } @else if $col-amount == 3 {
-            max-width: calc((100vw - 2 * #{$padding-side-cols}) / 3);
+            max-width: calc(33% - #{$side-padding-tablet} * 2 / 3);
         } @else if $col-amount == 4 {
-            max-width: calc((100vw - 3 * #{$padding-side-cols}) / 4);
+            max-width: calc((100% - 3 * #{$side-padding-tablet}) / 4);
         }
     }
 

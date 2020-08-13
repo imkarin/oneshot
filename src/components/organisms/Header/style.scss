@@ -2,30 +2,40 @@
 
 .Header {
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
+    max-width: $max-width-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
     @media screen and (min-width: $bp-tablet) {
+        height: 56vh;
+        flex-direction: row;
+    }
+    
+    @media screen and (min-width: $bp-desktop-sm) {
         min-height: 880px;
         height: 94vh;
-        max-width: $max-width-content;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
 
     > * {
         width: 100%;
 
         &:first-child {
-            @media screen and (min-width: $bp-desktop-sm) {
+            @media screen and (min-width: $bp-tablet) {
                 max-width: 66%;
+                padding-right: 40px;
+            }
+
+            @media screen and (min-width: $bp-tablet) {
+                padding-right: 0;
             }
         }
 
         &:last-child {
-            @media screen and (min-width: $bp-desktop-sm) {
+            @media screen and (min-width: $bp-tablet) {
                 max-width: 33%;
             }
         }

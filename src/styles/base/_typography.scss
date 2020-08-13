@@ -16,52 +16,87 @@ a, a:visited, a:hover, a:active {
     // desktop small
     @media screen and (min-width: $bp-desktop-sm) {
         font-size: 18px;
-        line-height: 34px;;
+        line-height: 34px;
     }
 }
 
 h1 {
-    //mobile + tablet
-    font-size: 48px;
-    line-height: 64px;
-    padding-bottom: 76px;
-
+    //mobile
+    font-size: 34px;
+    line-height: 48px;
+    padding-bottom: 38px;
+    
+    // tablet
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    
     // desktop small
     @media screen and (min-width: $bp-desktop-sm) {
+        font-size: 48px;
+        line-height: 64px;
+        padding-bottom: 76px;
     }
 }
 
 h2 {
-    //mobile + tablet
-    font-size: 36px;
-    line-height: 50px;
-    padding-bottom: 24px;
+    //mobile
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 18px;
 
+    // tablet
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    
     // desktop small
     @media screen and (min-width: $bp-desktop-sm) {
+        font-size: 36px;
+        line-height: 50px;
+        padding-bottom: 24px;
     }
 }
 
 h3 {
-    //mobile + tablet
-    font-size: 24px;
-    line-height: 34px;
+    //mobile
+    font-size: 16px;
+    line-height: 24px;
 
+    // tablet
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
     // desktop small
     @media screen and (min-width: $bp-desktop-sm) {
+        font-size: 24px;
+        line-height: 34px;
     }
 }
 
 h4 {
-    //mobile + tablet
-    font-size: 16px;
-    line-height: 22px;
+    //mobile
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 6px;
 
+    // tablet
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
     // desktop small
     @media screen and (min-width: $bp-desktop-sm) {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 16px;
     }
 }
 
@@ -82,7 +117,7 @@ p {
 strong {
     font-size: 16px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 600;
     color: $black;
 
 

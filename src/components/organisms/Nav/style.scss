@@ -1,27 +1,33 @@
 @import '../../../styles/base/variables';
 
 .Nav {
-    position: relative;
+    margin: 0 auto;
     width: 100%;
-    margin: 40px auto 0;
     max-width: $max-width-content;
+    padding-bottom: 64px;
+    padding-top: $side-padding-mobile;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     
-    > *:not(:last-child) {
-        font-size: 16px;
-        margin-right: 88px;
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 32px;
+        padding-bottom: 96px;
     }
 
-    .OneshotLogo {
-        position: absolute;
-        left: 0;
+    @media screen and (min-width: $bp-desktop-sm) {
+        padding-bottom: 0;
     }
-
-    .Icon {
-        max-width: 24px;
-        margin: 0;
+    
+    > .LinksContainer {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        
+        .Icon {
+            max-width: 24px;
+            margin: 0;
+        }
     }
 }
