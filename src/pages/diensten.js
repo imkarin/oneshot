@@ -7,7 +7,7 @@ import LogoShowcase from '../components/organisms/LogoShowcase'
 import TextSecondary from '../components/organisms/TextSecondary'
 import Header from '../components/organisms/Header'
 
-const Home = () => {
+const Diensten = () => {
     const logos = [
         {src: "/images/logo/logo-dark.png", alt: "logo"}, 
         {src: "/images/logo/logo-dark.png", alt: "leeogo"}, 
@@ -27,41 +27,10 @@ const Home = () => {
 
             <Layout>
                 <Header
-                homePage
-                h1Text="We combine strategy, creativity &amp; technology into digital experiences." 
-                pText="Oneshot vertaalt uw ideeën in digitale oplossingen." 
+                h1Text="Diensten." 
+                pText="Diensten." 
                 linkText="Bekijk onze diensten" 
-                linkSrc="#"
-                imgSrc="/images/home-hero.svg" 
-                imgAlt="Creative digital webagency header" />
-                
-                {/* <section>
-                    <div className="row">
-                        <div className="col one-of-three">
-                            <CaseCard 
-                            h4Text="EasyVoIP" 
-                            h3Text="Nieuwe website" 
-                            imgSrc="/images/purplecircle.png"
-                            imgAlt="Case" />
-                        </div>
-
-                        <div className="col one-of-three">
-                            <CaseCard 
-                            h4Text="ProlinQ" 
-                            h3Text="Nieuwe website" 
-                            imgSrc="/images/bluecircle.png"
-                            imgAlt="Case" />
-                        </div>
-
-                        <div className="col one-of-three">
-                            <CaseCard 
-                            h4Text="EasyVoIP" 
-                            h3Text="Nieuwe website" 
-                            imgSrc="/images/pinkcircle.png"
-                            imgAlt="Case" />
-                        </div>
-                    </div>
-                </section> */}
+                linkSrc="#" />
 
                 <section>
                     <div className="row">
@@ -119,4 +88,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Diensten

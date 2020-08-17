@@ -2,10 +2,15 @@ import './style.scss'
 import IntroText from '../../molecules/IntroText'
 import SVG from '../../atoms/SVG'
 import Image from '../../atoms/Image'
+import { motion } from 'framer-motion'
 
 const Header = props => {
     return (
-        <header className="Header">
+        <motion.header className='Header' 
+            animate={{ opacity: 1, y: 0 }} 
+            initial={{ opacity: 0, y: 0 }} 
+            transition={{ ease: 'easeInOut', duration: 1, delay: .3 }} >
+
             <IntroText 
             h1Text={props.h1Text} 
             pText={props.pText} 
@@ -14,9 +19,9 @@ const Header = props => {
 
             {props.homePage
             ? <SVG />
-             : <Image type="headerIllustration" src={props.imgSrc} alt={props.imgAlt} />
+            : <Image type='headerIllustration' src={props.imgSrc} alt={props.imgAlt} />
             }
-        </header>
+        </motion.header>
     )
 }
 

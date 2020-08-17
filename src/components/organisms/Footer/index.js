@@ -4,11 +4,16 @@ import LinkBlock from '../../molecules/LinkBlock'
 import Anchor from '../../atoms/Anchor'
 import Text from '../../atoms/Text'
 import Icon from '../../atoms/Icon'
+import { motion } from 'framer-motion'
 
 const Footer = props => {
 
     return (
-        <footer className="Footer">
+        <motion.footer className="Footer" 
+            animate={{ opacity: 1 }} 
+            initial={{ opacity: 0 }} 
+            transition={{ ease: 'easeInOut', duration: 1, delay: .3 }} >
+            
             <div className="row">
                     <div className="col one-of-two">
                     <OneshotLogo />
@@ -44,7 +49,7 @@ const Footer = props => {
                     <LinkBlock h4Text="Phone" href="#" linkText="06 39 81 36 29" />
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     )
 }
 
