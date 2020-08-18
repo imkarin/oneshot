@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 const Footer = props => {
 
     return (
-        <motion.footer className="Footer" 
+        <motion.footer className="Footer" id="footer"
             animate={{ opacity: 1 }} 
             initial={{ opacity: 0 }} 
             transition={{ ease: 'easeInOut', duration: 1, delay: .3 }} >

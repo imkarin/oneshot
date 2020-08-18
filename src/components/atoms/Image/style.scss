@@ -15,9 +15,15 @@
     }
 
     &.bigIllustration {
-        width: 368px;
-        justify-self: flex-end;
-        align-self: flex-end;
+        width: 160px;
+        align-self: flex-start;
+        padding: 24px 0;
+        
+        @media screen and (min-width: $bp-tablet) {
+            align-self: flex-end;
+            width: 368px;
+            padding: 0;
+        }
     }
 
     &.cardPreview {
@@ -48,6 +54,7 @@
 
     &.headerIllustration {
         padding-top: $padding-sections-mobile / 2;
+        display: none;
 
         @media screen and (min-width: $bp-tablet) {
             padding-top: 0;
@@ -63,7 +70,7 @@
     }
 }
 
-.first {
+.left {
     .bigIllustration {
         justify-self: flex-start;
         align-self: flex-start;

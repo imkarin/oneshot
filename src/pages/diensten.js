@@ -35,7 +35,7 @@ const Diensten = () => {
                             pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
                         </div>
 
-                        <div className="col one-of-two">
+                        <div className="col one-of-two right">
                             <Image 
                             type = "bigIllustration" 
                             src="/images/branding.png" 
@@ -51,7 +51,7 @@ const Diensten = () => {
                             pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
                         </div>
 
-                        <div className="col one-of-two first">
+                        <div className="col one-of-two left">
                             <Image 
                             type = "bigIllustration" 
                             src="/images/pencil-paint.png" 
@@ -67,7 +67,7 @@ const Diensten = () => {
                             pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
                         </div>
 
-                        <div className="col one-of-two">
+                        <div className="col one-of-two right">
                             <Image 
                             type = "bigIllustration" 
                             src="/images/web-development.png" 

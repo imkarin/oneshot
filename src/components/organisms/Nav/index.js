@@ -17,10 +17,10 @@ const Nav = props => {
             <div className="LinksContainer">
                 <Anchor href="/diensten">Diensten</Anchor>
                 <Anchor href="/aanpak">Aanpak</Anchor>
-                <Anchor href="/contact">Contact</Anchor> 
-                <Anchor href="#">
+                <Anchor href="#footer">Contact</Anchor> 
+                {/* <Anchor href="#">
                     <Icon src="/images/icon-eye.png" alt="Darkmode eye icon" />
-                </Anchor>
+                </Anchor> */}
             </div>
         </motion.nav>
     )
