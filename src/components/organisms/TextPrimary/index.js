@@ -1,6 +1,6 @@
-import './style.scss'
-import TextH4H2 from '../../molecules/TextH4H2'
 import Button from '../../atoms/Button'
+import TextH4H2 from '../../molecules/TextH4H2'
+import './style.scss'
 
 const TextPrimary = props => {
 

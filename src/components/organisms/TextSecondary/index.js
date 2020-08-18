@@ -1,6 +1,6 @@
-import './style.scss'
-import TextH2P from '../../molecules/TextH2P'
 import Button from '../../atoms/Button'
+import TextH2P from '../../molecules/TextH2P'
+import './style.scss'
 
 const TextSecondary = props => {
 

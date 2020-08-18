@@ -64,8 +64,10 @@ body {
             }
     
             &.aligned-bottom {
-                align-items: flex-end;
-                padding-bottom: 32px;
+                @media screen and (min-width: $bp-tablet) {
+                    align-items: flex-end;
+                    padding-bottom: 32px;
+                }
 
                 h2 {
                     padding-bottom: 48px;

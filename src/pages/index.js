@@ -4,9 +4,18 @@ import CaseCard from '../components/organisms/CaseCard'
 import TextPrimary from '../components/organisms/TextPrimary'
 import Figure from '../components/organisms/Figure'
 import LogoShowcase from '../components/organisms/LogoShowcase'
-import Header from '../components/organisms/Header'
 
 const Home = () => {
+    const intro = {
+        homePage: "homePage",
+        h1Text: "We combine strategy, creativity & technology into digital experiences.", 
+        pText: "Oneshot vertaalt uw ideeën in digitale oplossingen.", 
+        linkText: "Bekijk onze diensten", 
+        linkSrc: "/diensten", 
+        imgSrc: "/images/home-hero.svg", 
+        imgAlt: "Creative digital webagency header"
+    }
+
     const logos = [
         {src: "/images/logo/logo-dark.png", alt: "logo"}, 
         {src: "/images/logo/logo-dark.png", alt: "leeogo"}, 
@@ -24,16 +33,7 @@ const Home = () => {
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
 
-            <Layout>
-                <Header
-                homePage
-                h1Text="We combine strategy, creativity &amp; technology into digital experiences." 
-                pText="Oneshot vertaalt uw ideeën in digitale oplossingen." 
-                linkText="Bekijk onze diensten" 
-                linkSrc="#"
-                imgSrc="/images/home-hero.svg" 
-                imgAlt="Creative digital webagency header" />
-                
+            <Layout intro={intro}>                
                 {/* <section>
                     <div className="row">
                         <div className="col one-of-three">
@@ -66,7 +66,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col one-of-four">
                             <TextPrimary 
-                            buttonHref="#"
+                            buttonHref="/diensten"
                             buttonText="Diensten"
                             h4Text="Our specialty" 
                             h2Text="Zo kunnen wij je helpen" />
@@ -106,7 +106,7 @@ const Home = () => {
                             <TextPrimary 
                             h4Text="Werkwijze" 
                             h2Text="Wij zijn digitale duizendpoten met een creatieve geest." 
-                            buttonHref="#"
+                            buttonHref="/aanpak"
                             buttonText="Onze aanpak" />
                         </div>
                     </div>

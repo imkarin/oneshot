@@ -1,6 +1,6 @@
-import './style.scss'
-import Text from '../../atoms/Text'
 import Anchor from '../../atoms/Anchor'
+import Text from '../../atoms/Text'
+import './style.scss'
 
 const IntroText = props => {
 

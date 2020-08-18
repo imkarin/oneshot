@@ -6,6 +6,14 @@ import Image from '../components/atoms/Image'
 import TextPrimary from '../components/organisms/TextPrimary'
 
 const Diensten = () => {
+    const intro = { 
+        imgSrc: "/images/pencil-paint-left.svg", 
+        imgAlt: "Diensten: branding, visual design, development", 
+        h1Text: "Onze diensten.", 
+        pText: "Wij zijn digitale duizendpoten met een berg aan creativiteit!", 
+        linkText: "Dit zijn onze diensten.", 
+        linkSrc: "#"
+    }
 
     return (
         <>
@@ -17,14 +25,7 @@ const Diensten = () => {
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
 
-            <Layout>
-                <Header
-                imgSrc="/images/pencil-paint-left.svg" 
-                imgAlt="Diensten: branding, visual design, development"
-                h1Text="Onze diensten." 
-                pText="Wij zijn digitale duizendpoten met een berg aan creativiteit!" 
-                linkText="Dit zijn onze diensten." 
-                linkSrc="#" />
+            <Layout intro={intro} >
 
                 <section>
                     <div className="row aligned-center">

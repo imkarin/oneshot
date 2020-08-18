@@ -1,12 +1,13 @@
 import Nav from '../components/organisms/Nav'
+import Header from '../components/organisms/Header'
 import Footer from '../components/organisms/Footer'
 import { motion } from 'framer-motion'
 
 const Layout = props => (
     <div className='Layout' >
-
         <Nav />
-        {/* <div>Header</div> */}
+
+        <Header intro={props.intro} />
 
         <motion.main 
             animate={{ opacity: 1, y: 0 }} 

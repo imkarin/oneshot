@@ -1,5 +1,5 @@
-import './style.scss'
 import Text from '../../atoms/Text'
+import './style.scss'
 
 const TextH2P = props => {
 

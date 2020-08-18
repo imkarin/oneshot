@@ -1,11 +1,19 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
-import Header from '../components/organisms/Header'
-import TextSecondary from '../components/organisms/TextSecondary'
 import Image from '../components/atoms/Image'
+import Layout from '../components/Layout'
 import TextPrimary from '../components/organisms/TextPrimary'
+import TextSecondary from '../components/organisms/TextSecondary'
 
 const Aanpak = () => {
+    const intro = { 
+        imgSrc: "/images/pencil-paint-left.svg", 
+        imgAlt: "Aanpak",
+        h1Text: "Onze aanpak.", 
+        pText: "Open-minded, flexibel en secuur. Al onze producten worden gemaakt met liefde.", 
+        linkText: "Dit is hoe wij werken.", 
+        linkSrc: "#" 
+    }
+
     return (
         <>
             <Head>
@@ -16,14 +24,7 @@ const Aanpak = () => {
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
 
-            <Layout>
-                <Header
-                imgSrc="/images/pencil-paint-left.svg" 
-                imgAlt="Aanpak"
-                h1Text="Onze aanpak." 
-                pText="Open-minded, flexibel en secuur. Al onze producten worden gemaakt met liefde." 
-                linkText="Dit is hoe wij werken." 
-                linkSrc="#" />
+            <Layout intro={intro} >
 
                 <section>
                     <div className="row aligned-center">
