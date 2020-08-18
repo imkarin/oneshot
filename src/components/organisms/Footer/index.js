@@ -13,6 +13,8 @@ const Footer = props => {
             animate={{ opacity: 1 }} 
             initial={{ opacity: 0 }} 
             transition={{ ease: 'easeInOut', duration: 1, delay: .3 }} >
+
+            <img src="/images/wave.svg" alt="Wave background" />
             
             <div className="row">
                     <div className="col one-of-two">

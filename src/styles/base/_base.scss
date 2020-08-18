@@ -5,8 +5,10 @@ body {
 }
 
 .Layout {
+    position: relative;
     background-color: $white;
     overflow-x: hidden;
+    z-index: 0;
 
     nav, header {
         @extend %side-padding;
@@ -22,6 +24,14 @@ body {
             display: flex;
             flex-direction: column;
             
+        }
+
+        // wave svg background styling
+        .wave {
+            width: 100vw;
+            margin-top: -100%;
+            z-index: -1;
+            position: relative;
         }
         
         //rows
@@ -49,6 +59,15 @@ body {
     
             &.aligned-center {
                 align-items: center;
+            }
+    
+            &.aligned-bottom {
+                align-items: flex-end;
+                padding-bottom: 32px;
+
+                h2 {
+                    padding-bottom: 48px;
+                }
             }
         }
 

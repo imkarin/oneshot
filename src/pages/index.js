@@ -98,6 +98,8 @@ const Home = () => {
                     </div>
                 </section>
 
+                <img src="/images/wave-glow.svg" alt="Wave glow background" className="wave" />
+
                 <section>
                     <div className="row">
                         <div className="col one-of-two">

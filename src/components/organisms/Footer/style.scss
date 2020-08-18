@@ -1,6 +1,7 @@
 @import '../../../styles/base/variables';
 
 .Footer {
+    position: relative;
     box-sizing: content-box;
     width: 100%;
     max-width: $max-width-content;
@@ -22,6 +23,14 @@
 
     @media screen and (min-width: $bp-desktop-md + $side-padding-desktop * 2) {
         padding: $padding-sections-desktop calc((100vw - #{$max-width-content}) / 2);
+    }
+
+    > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        transform: translateY(-100%);
     }
     
     .col {

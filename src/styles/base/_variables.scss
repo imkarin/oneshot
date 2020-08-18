@@ -85,11 +85,21 @@ $transition-500: all .5s ease;
 
     @media screen and (min-width: $bp-tablet) {
         @if $col-amount == 2 {
-            max-width: calc(50% - 60px);
+            max-width: calc(50% - #{$side-padding-tablet});
         } @else if $col-amount == 3 {
             max-width: calc(33% - #{$side-padding-tablet} * 2 / 3);
         } @else if $col-amount == 4 {
             max-width: calc((100% - 3 * #{$side-padding-tablet}) / 4);
+        }
+    }
+
+    @media screen and (min-width: $bp-desktop-sm) {
+        @if $col-amount == 2 {
+            max-width: calc(50% - #{$padding-side-cols});
+        } @else if $col-amount == 3 {
+            max-width: calc(33% - #{$padding-side-cols} * 2 / 3);
+        } @else if $col-amount == 4 {
+            max-width: calc((100% - 3 * #{$padding-side-cols}) / 4);
         }
     }
 }

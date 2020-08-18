@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import Header from '../components/organisms/Header'
 import TextSecondary from '../components/organisms/TextSecondary'
 import Image from '../components/atoms/Image'
-import Header from '../components/organisms/Header'
+import TextPrimary from '../components/organisms/TextPrimary'
 
 const Diensten = () => {
 
@@ -18,9 +19,11 @@ const Diensten = () => {
 
             <Layout>
                 <Header
-                h1Text="Diensten." 
-                pText="Diensten." 
-                linkText="Bekijk onze diensten" 
+                imgSrc="/images/pencil-paint-left.svg" 
+                imgAlt="Diensten: branding, visual design, development"
+                h1Text="Onze diensten." 
+                pText="Wij zijn digitale duizendpoten met een berg aan creativiteit!" 
+                linkText="Dit zijn onze diensten." 
                 linkSrc="#" />
 
                 <section>
@@ -69,6 +72,34 @@ const Diensten = () => {
                             type = "bigIllustration" 
                             src="/images/web-development.png" 
                             alt="Web development" />
+                        </div>
+                    </div>
+                </section>
+
+                <img src="/images/wave-glow.svg" alt="Wave glow background" className="wave" />
+
+                <section>
+                    <div className="row aligned-bottom">
+                        <div className="col one-of-two">
+                            <TextSecondary 
+                            h2Text="Waar sta je nu?" 
+                            strongText="Klaar voor de start" 
+                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                        </div>
+                        <div className="col one-of-two">
+                            <TextSecondary
+                            strongText="The next step" 
+                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col one-of-two">
+                            <TextSecondary
+                            strongText="Subtiele verbeteringen" 
+                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam."
+                            buttonHref="#" 
+                            buttonText="Neem contact op" />
                         </div>
                     </div>
                 </section>
