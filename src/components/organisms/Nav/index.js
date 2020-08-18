@@ -15,7 +15,6 @@ const Nav = props => {
             <OneshotLogo />
 
             <div className="LinksContainer">
-                <Anchor href="/werk">Werk</Anchor>
                 <Anchor href="/diensten">Diensten</Anchor>
                 <Anchor href="/aanpak">Aanpak</Anchor>
                 <Anchor href="/contact">Contact</Anchor> 

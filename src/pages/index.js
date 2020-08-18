@@ -4,7 +4,6 @@ import CaseCard from '../components/organisms/CaseCard'
 import TextPrimary from '../components/organisms/TextPrimary'
 import Figure from '../components/organisms/Figure'
 import LogoShowcase from '../components/organisms/LogoShowcase'
-import TextSecondary from '../components/organisms/TextSecondary'
 import Header from '../components/organisms/Header'
 
 const Home = () => {

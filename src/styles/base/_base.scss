@@ -31,6 +31,10 @@ body {
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
+
+            &:not(:last-of-type) {
+                padding-bottom: 160px;
+            }
             
             @media screen and (min-width: $bp-tablet) {
                 flex-direction: row;
@@ -62,6 +66,14 @@ body {
                 justify-content: flex-start;
                 align-items: flex-start;
                 padding-bottom: 0;
+                
+                &.first {
+                    order: 0;
+                }
+                
+                &:not(.first) {
+                    order: 1;
+                }
             }
         }
         
