@@ -11,7 +11,7 @@ const Aanpak = () => {
         h1Text: "Onze aanpak.", 
         pText: "Open-minded, flexibel en secuur. Al onze producten worden gemaakt met liefde.", 
         linkText: "Dit is hoe wij werken.", 
-        linkSrc: "#" 
+        linkSrc: "#aanpak" 
     }
 
     return (
@@ -26,13 +26,13 @@ const Aanpak = () => {
 
             <Layout intro={intro} >
 
-                <section>
+                <section id="aanpak">
                     <div className="row aligned-center">
                         <div className="col one-of-two">
                             <TextSecondary 
                             h2Text="Diving" 
                             strongText="Diving subtitle" 
-                            pText="Aangenaam! Laten we elkaar leren kennen onder het genot van een goeie kop koffie. We houden een goed gesprek over jouw doelen, doelgroep, concurrenten en het probleem dat opgelost moet worden. Zo krijgen wij een goed beeld van hoe we je het best kunnen helpen.
+                            pText="Aangenaam! Laten we elkaar leren kennen onder het genot van een kop koffie. We houden een goed gesprek over jouw doelen, doelgroep, concurrenten en het probleem dat opgelost moet worden. Zo krijgen wij een goed beeld van hoe we je het best kunnen helpen.
 
                             Klikt het? Dan doen wij een voorstel over hoe we samen verder gaan." 
                             buttonHref="#footer" 
@@ -52,7 +52,7 @@ const Aanpak = () => {
                             <TextSecondary 
                             h2Text="Onderzoek" 
                             strongText="Onderzoek subtitle" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                            pText="Allereerst achterhalen we de redenen waarom je een nieuwe website wilt en wat je ermee wilt bereiken. We doen grondig onderzoek naar je doelgroep, en maken een plan van aanpak die de basis vormt van een goedwerkende oplossing." />
                         </div>
 
                         <div className="col one-of-two left">
@@ -104,7 +104,7 @@ const Aanpak = () => {
                             <TextPrimary 
                             h4Text="Klinkt goed?" 
                             h2Text="Klinkt goed? Laten we samenwerken!"
-                            buttonHref="#"
+                            buttonHref="#footer"
                             buttonText="Neem contact op" />
                         </div>
                     </div>

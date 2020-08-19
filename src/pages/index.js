@@ -68,7 +68,7 @@ const Home = () => {
                             <TextPrimary 
                             buttonHref="/diensten"
                             buttonText="Diensten"
-                            h4Text="Our specialty" 
+                            h4Text="Our specialties" 
                             h2Text="Zo kunnen wij je helpen" />
                         </div>
 
@@ -77,7 +77,7 @@ const Home = () => {
                             imgSrc="/images/branding.png"
                             imgAlt="alt"
                             strongText="Branding" 
-                            pText="Bedrijfsidentiteit" />
+                            pText="Identiteit &amp; uitstraling" />
                         </div>
 
                         <div className="col one-of-four">
@@ -85,7 +85,7 @@ const Home = () => {
                             imgSrc="/images/pencil-visual-design.png"
                             imgAlt="alt"
                             strongText="Visual Design" 
-                            pText="Visual Design" />
+                            pText="UI/UX &amp; visueel ontwerp" />
                         </div>
 
                         <div className="col one-of-four">
@@ -93,7 +93,7 @@ const Home = () => {
                             imgSrc="/images/web-development.png"
                             imgAlt="alt"
                             strongText="Web Development" 
-                            pText="Web development" />
+                            pText="Snelle &amp; betrouwbare websites" />
                         </div>
                     </div>
                 </section>
@@ -105,7 +105,7 @@ const Home = () => {
                         <div className="col one-of-two">
                             <TextPrimary 
                             h4Text="Werkwijze" 
-                            h2Text="Wij zijn digitale duizendpoten met een creatieve geest." 
+                            h2Text="Wij zijn digitale duizendpoten met een passie voor webdesign." 
                             buttonHref="/aanpak"
                             buttonText="Onze aanpak" />
                         </div>

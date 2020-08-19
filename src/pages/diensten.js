@@ -12,7 +12,7 @@ const Diensten = () => {
         h1Text: "Onze diensten.", 
         pText: "Wij zijn digitale duizendpoten met een berg aan creativiteit!", 
         linkText: "Dit zijn onze diensten.", 
-        linkSrc: "#"
+        linkSrc: "#diensten"
     }
 
     return (
@@ -27,13 +27,13 @@ const Diensten = () => {
 
             <Layout intro={intro} >
 
-                <section>
+                <section id="diensten">
                     <div className="row aligned-center">
                         <div className="col one-of-two">
                             <TextSecondary 
                             h2Text="Branding" 
-                            strongText="Branding subtitle" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                            strongText="Identiteit &amp; uitstraling" 
+                            pText="Een eerste indruk is belangrijk, en dat snappen we. Samen met jou gaan we op zoek naar je bedrijfsidentiteit, en zorgen we voor de juiste uitstraling: we ontwerpen logo's, huisstijlen, kleurkeuzes en een sterke bedrijfsnaam." />
                         </div>
 
                         <div className="col one-of-two right">
@@ -48,8 +48,8 @@ const Diensten = () => {
                         <div className="col one-of-two">
                             <TextSecondary 
                             h2Text="Visual Design" 
-                            strongText="Visual Design subtitle" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                            strongText="UI/UX &amp; visueel ontwerp" 
+                            pText="Een website moet er niet alleen goed uitzien, maar moet vooral fijn zijn in gebruik. Met oog op jouw doelen en de eindgebruikers ontwerpen we visuele designs voor je website. Hiervan maken we interactieve prototypes, waarin je precies kunt zien hoe de oplossing gaat werken." />
                         </div>
 
                         <div className="col one-of-two left">
@@ -65,7 +65,7 @@ const Diensten = () => {
                             <TextSecondary 
                             h2Text="Web Development" 
                             strongText="Web Development subtitle" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                            pText="Wij geloven niet in kant-en-klare oplossingen. We gaan doelgericht aan het werk, en zoeken naar de oplossing die het beste aansluit op jouw doelen. Zo creëren we slimme en schaalbare digitale oplossingen die niet alleen nu goed werken, maar ook in de  toekomst. " />
                         </div>
 
                         <div className="col one-of-two right">
@@ -85,12 +85,12 @@ const Diensten = () => {
                             <TextSecondary 
                             h2Text="Waar sta je nu?" 
                             strongText="Klaar voor de start" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                            pText="Je hebt een geweldig idee, en hebt misschien zelfs al een team verzameld. Nu is het tijd om je ideeën te realiseren. Laten we kijken naar de mogelijkheden, en je een voorloop geven op de competitie." />
                         </div>
                         <div className="col one-of-two">
                             <TextSecondary
                             strongText="The next step" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam." />
+                            pText="Je website of product heeft zijn waarde bewezen en nu is het tijd voor de volgende stap. We kijken samen naar je product, en gaan op zoek naar nieuwe potentie om het nóg succesvoller te maken." />
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ const Diensten = () => {
                         <div className="col one-of-two">
                             <TextSecondary
                             strongText="Subtiele verbeteringen" 
-                            pText="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean felis quam."
+                            pText="Je website of product is klaar voor visuele veranderingen of nieuwe features. Wij helpen je deze subtiele verbeteringen stuk voor stuk door te voeren en je product verder uit te breiden."
                             buttonHref="#" 
                             buttonText="Neem contact op" />
                         </div>
